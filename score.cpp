@@ -4,7 +4,7 @@
 
 using namespace std;
 
-const string traceFolder = "Test/";
+const string traceFolder = "/workspace/data/007/";
 const string defaultStudentBasic = "./testcode";
 const string defaultStanderBasic = "./Basic-Demo-64bit";
 

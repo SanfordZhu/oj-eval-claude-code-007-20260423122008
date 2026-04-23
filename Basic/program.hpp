@@ -140,13 +140,28 @@ public:
 
     int getNextLineNumber(int lineNumber);
 
+/*
+     * Method: getAllLineNumbers
+     * Usage: vector<int> lineNumbers = program.getAllLineNumbers();
+     * --------------------------------------------------------------
+     * Returns a vector of all line numbers in the program in ascending order.
+     */
+
+    std::vector<int> getAllLineNumbers();
+
     //more func to add
     //todo
 
 private:
 
     // Fill this in with whatever types and instance variables you need
-    //todo
+    struct Line {
+        std::string sourceLine;
+        Statement* statement;
+        Line() : statement(nullptr) {}
+    };
+
+    std::map<int, Line> lines;
 };
 
 #endif
